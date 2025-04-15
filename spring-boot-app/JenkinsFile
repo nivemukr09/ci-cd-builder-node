@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Build and Push Docker Image') {
             environment {
-                DOCKER_IMAGE = "nivedha/springboot-demo:${BUILD_NUMBER}"
+                DOCKER_IMAGE = "nivemuthu09/springboot-demo:${BUILD_NUMBER}"
                 REGISTRY_CREDENTIALS = credentials('dockerhub-nive')
             }
             steps {
